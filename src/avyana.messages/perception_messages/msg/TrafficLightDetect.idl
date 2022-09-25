@@ -1,0 +1,15 @@
+#include "std_msgs/msg/Header.idl"
+#include "sensor_msgs/msg/RegionOfInterest.idl"
+
+module perception_messages {
+    module msg {
+        @verbatim (language="comment", text="Message to find the TrafficLight Region")
+        struct TrafficLightDetect {
+            @verbatim (language="comment", text="Time Header Stamp")
+            std_msgs::msg::Header header;
+            @verbatim (language="comment", text="This message is used to specify a region of interest within an image.")
+            sensor_msgs::msg::RegionOfInterest roi;
+            int32 id;
+        };
+    };
+};
