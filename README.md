@@ -8,6 +8,8 @@ Get detailed documentation at [Avyana Docs](https://docs.avyana.tech/).
 
 ## Installation
 
+We only support `Source Installation` as of now. 
+
 ### If ROS2 is already installed.
 
 Clone this Repo directly into your `ROS2 Workspace`, and run
@@ -46,6 +48,21 @@ rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 
 colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
 ```
+
+### To install CUDA 
+
+If ros2 already installed, then run
+```
+sudo bash Installation/install_cuda.bash
+```
+
+If ROS2 not installed, run the main.bash install with the argument `--cuda`, as shown:
+
+```
+sudo bash Installation/main.bash --cuda
+```
+
+
 
 ### Updates
 
