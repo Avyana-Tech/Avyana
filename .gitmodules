@@ -1,6 +1,3 @@
 [submodule "src/avyana.core"]
 	path = src/avyana.core
 	url = https://github.com/Avyana-Tech/avyana.core.git
-[submodule "src/avyana.messages"]
-	path = src/avyana.messages
-	url = https://github.com/Avyana-Tech/avyana.messages.git
