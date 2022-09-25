@@ -15,10 +15,11 @@ We only support `Source Installation` as of now.
 Clone this Repo directly into your `ROS2 Workspace`, and run
 
 ```
+git clone https://github.com/Avyana-Tech/avyana.git --recursive
 cd Avyana 
 
 git submodule init
-git submodule add
+git submodule update --remote
 
 rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 
@@ -39,10 +40,11 @@ This will install **ROS2 Foxy** if the OS is Ubuntu 20.04 and **ROS2 Humble** if
 Then move the Avyana folder into the newly created `ROS2 Workspace`, and then run 
 
 ```
+git clone https://github.com/Avyana-Tech/avyana.git --recursive
 cd Avyana 
 
 git submodule init
-git submodule add
+git submodule update --remote
 
 rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 
