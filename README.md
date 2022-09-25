@@ -5,7 +5,9 @@ This is the main repository for the Avyana Self-Driving Car Project. It is a met
 This project is built on ROS2 with Foxy and Humble.
 
 Get detailed documentation at [Avyana Docs](https://docs.avyana.tech/).
+
 ## Installation
+
 ### If ROS2 is already installed.
 
 Clone this Repo directly into your `ROS2 Workspace`, and run
@@ -20,15 +22,15 @@ rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 
 colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
 ```
+### If ROS2 is not installed.
 
 If you do not have ROS installed, then run the following
 To begin installation of ROS2 and other required dependencies & run
 
 ``` 
+cd /path/to/avyana
 sudo bash Installation/main.bash
 ```
-
-### If ROS2 is not installed.
 
 This will install **ROS2 Foxy** if the OS is Ubuntu 20.04 and **ROS2 Humble** if the OS is Ubuntu 22.04. It also installs all the additional requirements, and git-submodules as well. 
 
@@ -45,7 +47,7 @@ rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
 ```
 
-## Updates
+### Updates
 
 To update the sub-modules,
 
@@ -59,3 +61,8 @@ rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 
 colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
 ```
+
+## Docker Image
+
+Currently under the works, a docker image would be provided soon for those who wont to work on Avyana, without a local setup.
+
