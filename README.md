@@ -18,7 +18,7 @@ Clone this Repo directly into your `ROS2 Workspace`, and run
 git clone https://github.com/Avyana-Tech/avyana.git --recursive
 cd Avyana 
 
-git submodule init
+git submodule update --init --recursive
 git submodule update --remote
 
 rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
@@ -43,7 +43,7 @@ Then move the Avyana folder into the newly created `ROS2 Workspace`, and then ru
 git clone https://github.com/Avyana-Tech/avyana.git --recursive
 cd Avyana 
 
-git submodule init
+git submodule update --init --recursive
 git submodule update --remote
 
 rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
@@ -74,7 +74,7 @@ To update the sub-modules,
 cd ros2_ws/src
 cd Avyana
 
-git submodule update
+git submodule update --remote
 
 rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 

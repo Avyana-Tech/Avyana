@@ -32,10 +32,7 @@ sudo pip3 install -r Installation/requirements.txt
 sudo apt-get install ssl-cert
 sudo make-ssl-cert generate-default-snakeoil
 
-cd 
-cd ~/ros2_ws/src
-git clone https://github.com/Avyana-Tech/rosbridge_suite.git
-
-cd ..
+cd
+cd ros2_ws
 
 colcon build
