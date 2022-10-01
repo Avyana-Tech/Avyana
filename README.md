@@ -85,3 +85,10 @@ colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
 
 Currently under the works, a docker image would be provided soon for those who wont to work on Avyana, without a local setup.
 
+## Contributions
+
+To add contributions, make sure to read `.github/bug_report.md` before opening a PR or Issue.
+
+## Authors
+
+- [@regatte](https://github.com/regatte)
