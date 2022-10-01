@@ -25,6 +25,7 @@ rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 
 colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
 ```
+
 ### If ROS2 is not installed.
 
 If you do not have ROS installed, then run the following
@@ -51,6 +52,13 @@ rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
 ```
 
+If submodules arent working out, then run 
+```
+cd avyana
+vcs import src < avyana.repos
+```
+but you need to do this recursively, as the project has nested repositories.
+
 ### To install CUDA 
 
 If ros2 already installed, then run
@@ -73,7 +81,9 @@ To update the sub-modules,
 ```
 cd ros2_ws/src
 cd Avyana
+git pull
 
+git submodule update --init --recursive
 git submodule update --remote
 
 rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
