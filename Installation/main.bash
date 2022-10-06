@@ -27,8 +27,8 @@ mv 7101c20b7055d68e6f57b34687e4b8cd ros2_install
 chmod a+x ros2_install/ROS2_FOXY_HUMBLE_INSTALL.bash
 sudo bash ros2_install/ROS2_FOXY_HUMBLE_INSTALL.bash
 
-sudo apt-get install ros-${ROS_DISTRO}-v4l2-camera
-sudo apt-get install ros-${ROS_DISTRO}-lanelet2
+sudo apt-get install ros-humble-v4l2-camera
+sudo apt-get install ros-humble-lanelet2
 sudo pip3 install -r Installation/requirements.txt
 
 sudo apt-get install ssl-cert
