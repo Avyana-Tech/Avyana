@@ -3,11 +3,15 @@ repositories:
         type: git
         url: https://github.com/Avyana-Tech/avyana.core.git
         version: main
-    avyana.launch:
-        type: git
-        url: https://github.com/Avyana-Tech/avyana.launch.git
-        version: main
     avyana.messages:
         type: git
         url: https://github.com/Avyana-Tech/avyana.messages.git
+        version: main
+    avyana.map:
+        type: git
+        url: https://github.com/Avyana-Tech/avyana.map.git
+        version: main
+    avyana.launch:
+        type: git
+        url: https://github.com/Avyana-Tech/avyana.launch
         version: main

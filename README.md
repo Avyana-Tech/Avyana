@@ -8,6 +8,8 @@ Get detailed documentation at [Avyana Docs](https://docs.avyana.tech/).
 
 ## Installation
 
+
+
 We only support `Source Installation` as of now. 
 
 ### If ROS2 is already installed.
@@ -18,8 +20,7 @@ Clone this Repo directly into your `ROS2 Workspace`, and run
 git clone https://github.com/Avyana-Tech/avyana.git --recursive
 cd Avyana 
 
-git submodule update --init --recursive
-git submodule update --remote
+vcs import src < avyana.repos
 
 rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 
@@ -44,20 +45,14 @@ Then move the Avyana folder into the newly created `ROS2 Workspace`, and then ru
 git clone https://github.com/Avyana-Tech/avyana.git --recursive
 cd Avyana 
 
-git submodule update --init --recursive
-git submodule update --remote
+vcs import src < avyana.repos
 
 rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 
 colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
 ```
 
-If submodules arent working out, then run 
-```
-cd avyana
-vcs import src < avyana.repos
-```
-but you need to do this recursively, as the project has nested repositories.
+note: run `vcs import` recursively, as there are a lot of nested repositories.
 
 ### To install CUDA 
 
@@ -83,8 +78,7 @@ cd ros2_ws/src
 cd Avyana
 git pull
 
-git submodule update --init --recursive
-git submodule update --remote
+vcs pull src
 
 rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 
