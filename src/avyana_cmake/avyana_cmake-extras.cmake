@@ -1,0 +1,1 @@
+include("${autoware_cmake_DIR}/autoware_package.cmake")
