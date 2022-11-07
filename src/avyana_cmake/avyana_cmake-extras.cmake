@@ -1,1 +1,1 @@
-include("${autoware_cmake_DIR}/autoware_package.cmake")
+include("${avyana_cmake_DIR}/avyana_package.cmake")

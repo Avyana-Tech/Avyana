@@ -1,4 +1,4 @@
-macro(autoware_package)
+macro(avyana_package)
   # Set compile options
   if(NOT CMAKE_CXX_STANDARD)
     set(CMAKE_CXX_STANDARD 17)
